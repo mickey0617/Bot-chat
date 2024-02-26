@@ -31,7 +31,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("Hey I am Stanley stawa ask me questions dear🦥");
+        await message.reply("Je ne laisse rien au hasard, tout est calculé et prévu d'avance 🙂");
         return;
       }
 
