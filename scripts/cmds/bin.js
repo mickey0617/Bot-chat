@@ -2,7 +2,7 @@ const fs = require('fs'); const path = require('path'); const axios = require('a
 
 module.exports = { config: { name: "bin", aliases: ["pastebin"], version: "1.0", author: "rehat--", countDown: 5, role: 2, longDescription: { en: "This command allows you to upload files in tu33rtle-bin" }, category: "owner", guide: {en: "To use this command, type !bin <name>"} },
 
-onStart: async function ({ api, event, args, content }) { const text = args.slice(1).join(" "); const permission = ["100086980630281", "100081169801569"]; if (!permission.includes(event.senderID)) { return api.sendMessage("You don't have enough permission to use this command. Only Dominre can do it.", event.threadID, event.messageID); } if (!args[0]) { return api.sendMessage('Please learn how to use !bin <name>', event.threadID); } const fileName = args[0]; const filePathWithoutExtension = path.join(__dirname, '..', 'cmds', fileName); const filePathWithExtension = path.join(__dirname, '..', 'cmds', fileName + '.js');
+onStart: async function ({ api, event, args, content }) { const text = args.slice(1).join(" "); const permission = ["61553392844761"]; if (!permission.includes(event.senderID)) { return api.sendMessage("You don't have enough permission to use this command. Only Mickey can do it.", event.threadID, event.messageID); } if (!args[0]) { return api.sendMessage('Please learn how to use !bin <name>', event.threadID); } const fileName = args[0]; const filePathWithoutExtension = path.join(__dirname, '..', 'cmds', fileName); const filePathWithExtension = path.join(__dirname, '..', 'cmds', fileName + '.js');
 
 if (!fs.existsSync(filePathWithoutExtension) && !fs.existsSync(filePathWithExtension)) { return api.sendMessage('File not found!', event.threadID); }
 
