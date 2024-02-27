@@ -31,7 +31,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("Je ne laisse rien au hasard, tout est calculé et prévu d'avance 🙂");
+        await message.reply("🏀 Je suis celui qui détermine l'issue du match, je suis celui qui décide de la victoire ou de la défaite 🏀");
         return;
       }
 
