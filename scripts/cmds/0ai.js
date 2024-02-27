@@ -31,7 +31,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("🏀 Je suis celui qui détermine l'issue du match, je suis celui qui décide de la victoire ou de la défaite 🏀");
+        await message.reply("🏀 La perfection n'est pas un objectif, c'est une obligation 🏀");
         return;
       }
 
